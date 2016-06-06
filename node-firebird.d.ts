@@ -35,5 +35,5 @@ declare module "node-firebird" {
     function attachOrCreate(IOptions, callback?: (error: Error, db: IDB) => void);
     function pool(max: number, IOptions, callback?: (error: Error, db: IDB) => void);
     function transaction(isolation, Callback: (err: Error, transaction: ITransaction) => void);
-    function on(event : string,EventEmitter : ()=>void);
+    //function on(event : string,EventEmitter : ()=>void);
 }
