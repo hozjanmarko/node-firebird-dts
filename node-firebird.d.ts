@@ -10,9 +10,12 @@ declare module "node-firebird" {
     export interface IOptions {
         host: string,
         port?: number,
-        database: string,
+        database?: string,
         user: string,
         password: string,
+        role? : string,
+        filename? : string,
+        pageSize? : number
     }
 
     export interface IDB {
